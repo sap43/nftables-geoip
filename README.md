@@ -2,6 +2,8 @@ nftables-geoip
 
 Python code that sets up geoip based blocking for nftables. Code checks APNIC for list of ips mapped to countries, downloads this list, searches for ips mapped to India, places these ips into a whitelist that gets imported into nftables.
 
+All files in the PF1 folder can be placed anywhere on your linux file system, the folder name is unimportant, however all files in the /etc folder need to be placed in the linux /etc folder.
+
 Additional notes, relating to the nftables firewall:
 
 1) Services are running at port 5500 in this codebase, nftables will only allow all traffic originating from or destined for ips in the whitelist, using port 5500.
