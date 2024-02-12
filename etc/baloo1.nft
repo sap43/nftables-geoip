@@ -1,0 +1,5 @@
+set blist1 {
+type ipv4_addr;
+flags dynamic, timeout;
+timeout 5m;
+}
