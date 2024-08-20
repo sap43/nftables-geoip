@@ -20,9 +20,9 @@ Additional notes, relating to the nftables firewall:
 12) Any ips generating more than 5 new connection requests a second get permanently banned, to protect against slowloris attacks.
 13) Access to the internet is denied except for whatsapp.
 14) Rules have been tested on a debian 11 machine.
-15) Protection from layer 7 attacks is added by coded hosted in another repo that analyzes logs at the application layer and then blacklists ips found to be generating junk requests at a rate beyond a specific maximum level.
+15) Protection from layer 7 attacks is added by code hosted in another repo that analyzes logs at the application layer and then blacklists ips found to be generating junk requests at a rate beyond a specific maximum level.
 
-If anyone has any thoughts on the roadmap for the firewall, please dm me. Maybe we can find a large enough, annotated database of traffic, train some ai algo on this, and then run it in realtime to build a more responsive rulebase? Anyone knows how well such a firewall may perform? Or other rules that could be added? Other attackes to protect against, or a means to speed this up?
+If anyone has any thoughts on the roadmap for the firewall, please dm me. Maybe we can find a large enough, annotated database of traffic, train some ai algo on this, and then run it in realtime to build a more responsive rulebase? Anyone knows how well such a firewall may perform? Or other rules that could be added? Other attacks to protect against, or a means to speed this up?
 
 Load testing, performance, stress testing, using nping (on a mac m1 system) upcoming.
 
